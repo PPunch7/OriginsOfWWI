@@ -1,0 +1,188 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Origins of World War I</string>
+    <string name="player_btn">Play with Player</string>
+    <string name="ai_btn">Play with AI</string>
+
+    <string name="select_nations_name">Select Nations</string>
+    <string name="britain_card">Britain card</string>
+    <string name="france_card">France card</string>
+    <string name="germany_card">Germany card</string>
+    <string name="russia_card">Russia card</string>
+    <string name="austria_card">Austria card</string>
+
+    <string name="select_alliances_name">Select Alliances</string>
+    <string name="alliances_symbol">Alliances</string>
+    <string name="belong_symbol">Belong to</string>
+    <string name="empty">Empty</string>
+    <string name="britain_nation">Britain</string>
+    <string name="france_nation">France</string>
+    <string name="germany_nation">Germany</string>
+    <string name="russia_nation">Russia</string>
+    <string name="austria_nation">Austria</string>
+    <string name="player1">Player01</string>
+    <string name="player2">Player02</string>
+    <string name="player3">Player03</string>
+    <string name="player4">Player04</string>
+    <string name="player5">Player05</string>
+    <string name="player">Player</string>
+    <string name="ai1">AI01</string>
+    <string name="ai2">AI02</string>
+    <string name="ai3">AI03</string>
+    <string name="ai4">AI04</string>
+    <string name="none">None</string>
+
+    <string name="diplomatic_attack">Diplomatic Attack</string>
+    <string name="dice_throw">Dice\nThrow</string>
+    <string name="odds">Odds</string>
+    <string name="ratio_less1">Less than\n1 to 1</string>
+    <string name="ratio_1">1 to 1</string>
+    <string name="ratio_2">2 to 1</string>
+    <string name="ratio_3">3 to 1</string>
+    <string name="ratio_4">4 to 1\nor over</string>
+    <string name="ae_s">AE</string>
+    <string name="ex_s">EX</string>
+    <string name="de_s">DE</string>
+    <string name="ae_stand">AE (Attacker Eliminated):</string>
+    <string name="ex_stand">EX (Exchange):</string>
+    <string name="de_stand">DE (Defender Eliminated):</string>
+    <string name="ae_info">signifies that all of the attacker\'s PF\'s are eliminated, while the defender does not lose any.</string>
+    <string name="ex_info">signifies that the nation with the lesser number of PF\'s loses all of them, while the other nation loses an equal amount.</string>
+    <string name="de_info">signifies that all of the defender\'s PF\'s are eliminated, while the attacker does not lose any.</string>
+
+    <string name="italy_nation">Italy</string>
+    <string name="serbia_nation">Serbia</string>
+    <string name="romania_nation">Romania</string>
+    <string name="bulgaria_nation">Bulgaria</string>
+    <string name="greece_nation">Greece</string>
+    <string name="turkey_nation">Turkey</string>
+    <string name="far_east_nation">Far East</string>
+    <string name="africa_nation">Africa</string>
+    <string name="current_turn">Current Turn: </string>
+    <string name="nation">Nation: </string>
+    <string name="no_turn">Turn: </string>
+    <string name="dice">Dice: </string>
+    <string name="action">Action: </string>
+    <string name="place">Place PF</string>
+    <string name="attack">Attack</string>
+    <string name="available_pf">Available PF: </string>
+    <string name="max_pf">Max.: </string>
+    <string name="nation_flag">Nation flag</string>
+
+    <string name="num0">0</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="num10">10</string>
+    <string name="num11">11</string>
+    <string name="num12">12</string>
+    <string name="num13">13</string>
+    <string name="num14">14</string>
+    <string name="num15">15</string>
+    <string name="num16">16</string>
+
+    <string name="game_action">Actions</string>
+
+    <string name="game_finished">Game finished</string>
+    <string name="winner">The winner: </string>
+    <string name="rank">Rank</string>
+    <string name="nation_">Nation</string>
+    <string name="total_score">Total score</string>
+
+    <string name="location">Location: </string>
+    <string name="attacker">Attacker</string>
+    <string name="defender">Defender</string>
+    <string name="pf">PF:</string>
+    <string name="ae">Attacker Eliminated</string>
+    <string name="ex">Exchange</string>
+    <string name="de">Defender Eliminated</string>
+
+    <string name="ai_actions">AI actions</string>
+    <string name="placing_pf">Placing PF</string>
+    <string name="attacking">Attacking</string>
+    <string name="location_">Location</string>
+    <string name="pf_">PF</string>
+    <string name="dice_">Dice</string>
+    <string name="result">Result: </string>
+    <string name="bf">Before</string>
+    <string name="af">After</string>
+
+    <string name="opportunity_attack">Opportunity Attack</string>
+    <string name="opportunity">Opportunity</string>
+    <string name="percent">Percentage</string>
+
+    <string name="map">Map</string>
+    <string name="information">Information</string>
+
+    <string name="back_btn">Back</string>
+    <string name="next_btn">Next</string>
+    <string name="start_btn">Start</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="confirm_btn">Confirm</string>
+    <string name="end_turn_btn">End Turn</string>
+    <string name="restart_btn">Restart</string>
+    <string name="new_game_btn">New Game</string>
+    <string name="close_btn">Close</string>
+    <string name="undo_btn">Undo</string>
+    <string name="random_btn">Random</string>
+    <string name="roll_btn">Roll a dice</string>
+    <string name="lt_btn">&lt;</string>
+    <string name="gt_btn">&gt;</string>
+    <string name="slash">/</string>
+    <string name="switch_btn">Switch Map/Table</string>
+
+    <string name="dice_opportunities">Dice Opportunities</string>
+    <string name="waiting">waiting</string>
+
+    <string-array name="difficult">
+        <item>Very Easy</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+    <string name="noted">** Noted:</string>
+    <string name="noted_detail">The nations below would get <b>VICTORY POINTS</b> once they had <b>TREATY RIGHTS</b> on this location.\n
+                                (E) means that nation receives the victory points for <b>EXCLUSIVE</b> treaty right ONLY if no other nation has treaty rights from this location.</string>
+    <string name="vp">Victory Points</string>
+
+    <string name="nation_info">This list shows the locations would give the <b>VICTORY POINTS</b> once this nation had <b>TREATY RIGHTS</b> on that location.\n
+                                (E) means that nation receives the victory points for <b>EXCLUSIVE</b> treaty right <b>ONLY</b> if no other nation has treaty rights from this location.</string>
+    <string name="special">Special</string>
+
+    <string name="rules">Rules</string>
+    <string name="rule1">Board game could be played by 5 players who represent 5 nations.</string>
+    <string name="rule2">The games are arranged in the following order: Britain -> France -> Germany -> Russia -> Austria, up to 10 turns each.</string>
+    <string name="rule3">Each turn, each players could place Political Factors (PF\'s) according to the amount specified in each nation.</string>
+    <string name="rule4">The placing could be placed with no more than 5 PF\'s per location per turn except in the area of the nation, it could be placed according to the remaining PF\'s.</string>
+    <string name="rule5">After placing the PF, players could choose to attack other players in any area once, but that area requires both attacker\'s PF\'s and defender\'s PF\'s.</string>
+    <string name="rule6">The result of the attack would depend on the roll of the dice, and the ratio of PF\'s between the attacker and the defender.</string>
+    <string name="rule7">In all location, once any player had at least 10 PF\'s, it would be got TREATY RIGHTS in that location.</string>
+    <string name="rule8">After all players have played 10 turn, the game would count VICTORY POINTS from locations which received TREATY RIGHTS in accordance with the goals of each nation.\n
+                        The red numbers that mean EXCLUSIVE treaty rights only if no other nation has treaty right from that nation.</string>
+    <string name="rule9">For some nations, there would be EXTRA victory points when players could complete the mission.</string>
+
+    <string name="how_to_play">How to play</string>
+    <string name="playing1">Players could select to play among themselves 5 people or choose to play with AI.</string>
+    <string name="playing2">The players could choose the nation they would like to play or press the button to let the game randomly give nations.</string>
+    <string name="playing3">For playing with AI, players could choose how many AI and the level of AI.</string>
+    <string name="playing4">The games would be played in the order of nations according to the rules.</string>
+    <string name="playing5">The game would show information of current players including the number of PF\'s that could be placed and the number of turns at that time.</string>
+    <string name="playing6">Players could change the view to be a map or table at any time by pressing the button above to switch.</string>
+    <string name="playing7">The game also shows an overview of the number of PF\'s in each location and would change colour to BLUE when any nation got TREATY RIGHTS on the table view.</string>
+    <string name="playing8">To place PF\'s, players could choose to place anywhere by pressing the nation AREAS on the map view or the nation BUTTONS on the table view.</string>
+    <string name="playing9">Players could specify the number of PF\'s to be placed in that area according to the rules by sliding the seek bar.</string>
+    <string name="playing10">For attacking, players could choose the area as the same as placing. Also, players could choose other players who would be defender.</string>
+    <string name="playing11">Before attack confirmation, the game would calculate the ratio of PF\'s between attacker and defender, then shows the probability that may occur.</string>
+    <string name="playing12">After the attack was completed, the game would show the results of attacks between attacker and defender.</string>
+    <string name="playing13">Players could decide to skip attack by pressing the END TURN button and press the UNDO button to reverse the placement (UNDO cannot be used for the attacking).</string>
+    <string name="playing14">For the turn of AI, the game would summarize all actions in that turn and notify the players.</string>
+    <string name="playing15">Players could click on the country FLAG or NAME at the top or the nation FLAG at the bottom to see the goals of each nations.</string>
+    <string name="playing16">Players could press the dice on the top left to see the detail of DIPLOMATIC ATTACK.</string>
+    <string name="playing17">After all players have completed 10 turns, the game would summarize the score and announce the winner.</string>
+</resources>

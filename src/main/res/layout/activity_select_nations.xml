@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SelectNationsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="16dp" />
+
+        <TextView
+            android:id="@+id/txtSelectCard"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/select_nations_name"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:autoSizeMaxTextSize="30sp"
+            app:autoSizeTextType="uniform" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtnBritainCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:contentDescription="@string/num0"
+                android:onClick="onSelectNationsBtn_Click"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flag_of_the_united_kingdom" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/ibtnFranceCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:contentDescription="@string/num1"
+                android:onClick="onSelectNationsBtn_Click"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flag_of_france" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtnGermanyCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:contentDescription="@string/num2"
+                android:onClick="onSelectNationsBtn_Click"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flag_of_germany" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/ibtnRussiaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:contentDescription="@string/num3"
+                android:onClick="onSelectNationsBtn_Click"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flag_of_russia" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtnAustriaCard"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@drawable/border"
+                android:contentDescription="@string/num4"
+                android:onClick="onSelectNationsBtn_Click"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flag_of_austria_hungary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                tools:ignore="NestedWeights" />
+
+            <Button
+                android:id="@+id/btnRandom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:onClick="onRandomBtn_Click"
+                android:text="@string/random_btn"
+                android:textSize="20sp"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/lblPlayer1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="center|end"
+                android:text="@string/player1"
+                android:textColor="#2C9F00"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/txtPlayer1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|start"
+                android:text="@string/none"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:id="@+id/spcHead2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <ImageButton
+                android:id="@+id/ibtnPlayer2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/computer_icon"
+                android:contentDescription="@string/num1"
+                android:onClick="onIconBtn_Click"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/lblPlayer2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="center|end"
+                android:text="@string/player2"
+                android:textColor="#26A8FF"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/txtPlayer2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|start"
+                android:text="@string/none"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Spinner
+                android:id="@+id/spnPlayer2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Space
+                android:id="@+id/spcEnd2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:id="@+id/spcHead3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <ImageButton
+                android:id="@+id/ibtnPlayer3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/computer_icon"
+                android:contentDescription="@string/num2"
+                android:onClick="onIconBtn_Click"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/lblPlayer3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="center|end"
+                android:text="@string/player3"
+                android:textColor="#EA5600"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/txtPlayer3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|start"
+                android:text="@string/none"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Spinner
+                android:id="@+id/spnPlayer3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Space
+                android:id="@+id/spcEnd3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:id="@+id/spcHead4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <ImageButton
+                android:id="@+id/ibtnPlayer4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/computer_icon"
+                android:contentDescription="@string/num3"
+                android:onClick="onIconBtn_Click"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/lblPlayer4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="center|end"
+                android:text="@string/player4"
+                android:textColor="#E50BF1"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/txtPlayer4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|start"
+                android:text="@string/none"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Spinner
+                android:id="@+id/spnPlayer4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Space
+                android:id="@+id/spcEnd4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:id="@+id/spcHead5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <ImageButton
+                android:id="@+id/ibtnPlayer5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/computer_icon"
+                android:contentDescription="@string/num4"
+                android:onClick="onIconBtn_Click"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/lblPlayer5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="2"
+                android:gravity="center|end"
+                android:text="@string/player5"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <TextView
+                android:id="@+id/txtPlayer5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center|start"
+                android:text="@string/none"
+                android:textSize="24sp"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Spinner
+                android:id="@+id/spnPlayer5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                app:autoSizeMaxTextSize="30sp"
+                app:autoSizeTextType="uniform" />
+
+            <Space
+                android:id="@+id/spcEnd5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onBackBtn_Click"
+                android:text="@string/back_btn"
+                android:textSize="20sp"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform"
+                tools:ignore="NestedWeights" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3" />
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onNextBtn_Click"
+                android:text="@string/start_btn"
+                android:textSize="20sp"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeTextType="uniform" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
